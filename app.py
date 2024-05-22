@@ -1,8 +1,3 @@
-# Initialize a new Git repository
-git init
-
-# Create app.py and requirements.txt
-echo "
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
@@ -132,18 +127,3 @@ elif simulation == 'Microscopic Black Holes':
     microscopic_black_holes_simulation()
 elif simulation == 'Metamaterials':
     metamaterials_simulation()
-" > app.py
-
-echo "
-streamlit
-matplotlib
-numpy
-networkx
-" > requirements.txt
-
-# Commit and push to GitHub
-git add app.py requirements.txt
-git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/ToE-Simulations.git
-git branch -M main
-git push -u origin main
